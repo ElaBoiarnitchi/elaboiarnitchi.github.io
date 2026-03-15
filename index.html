@@ -77,7 +77,14 @@
         .portfolio-section { padding: 140px 0; background: var(--bg-white); }
         .portfolio-card { display: grid; grid-template-columns: 1fr 1fr; background: var(--bg-light); margin-bottom: 80px; border-radius: 24px; overflow: hidden; border: 1px solid #f1f5f9; transition: 0.4s ease; }
         .portfolio-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
-        .portfolio-img { background-size: cover; background-position: center; min-height: 450px; transition: 0.6s ease; }
+        .portfolio-img {
+            background-size: contain;      
+            background-repeat: no-repeat;  
+            background-position: center;   
+            background-color: #ffffff;     
+            min-height: 450px;
+            transition: 0.6s ease;
+        }
         .portfolio-card:hover .portfolio-img { transform: scale(1.05); }
         .portfolio-content { padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; }
         .portfolio-content h3 { font-size: 2.2rem; margin: 15px 0; letter-spacing: -1px; }
